@@ -10,6 +10,12 @@ Install packages as follows:
 
 run this
 ```python
+# in cifar folder:
+python3 distill.py --dataset=cifar10 --image=/data/ALPHAaaa/singleimage/ameyoko_dataset32_singleameyoko_init0.5_deg30_scale500_1_shear30_randinterp_False_vflipFalse_cropfirstTrue_new_50000/train \
+                   --student=wrn_16_4 --teacher=wrn_40_4 
+```
+
+```python
 # in in1k folder:
 python3 distill.py --dataset=in1k --testdir /data/linshiqi047/imagenet/val \
                    --traindir=/data/ALPHAaaa/singleimage/ameyoko_dataset32_singleameyoko_init0.5_deg30_scale500_1_shear30_randinterp_False_vflipFalse_cropfirstTrue_new_50000/train --student_arch=resnet50 --teacher_arch=resnet18 
